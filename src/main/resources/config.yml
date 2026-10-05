@@ -1,0 +1,37 @@
+# NexusTutorial -- a friendly, hands-on tour of the server's plugins.
+#
+# Players type /tutorial to open a menu of topics. Each lesson is a few short steps: some to read,
+# some to try ("run this command", "open that menu", "get this item"). Progress is remembered.
+# The lessons themselves live inside the plugin; to change, add or hide any of them, edit
+# plugins/NexusTutorial/custom-lessons.yml (it is explained in that file), then /tutorial reload.
+#
+# Messages understand &-colour codes.
+
+offer:
+  # Who is invited to the tutorial when they join (once, ever):
+  #   new = players joining for the very first time    all = anyone who has never started it
+  #   off = nobody (they can still type /tutorial)
+  mode: new
+  # How long after joining the invitation arrives, so it is not lost in the join spam.
+  delay-seconds: 15
+
+ui:
+  # A progress bar at the top of the screen while a lesson is running.
+  boss-bar: true
+  # A big "Lesson complete" title.
+  titles: true
+
+rewards:
+  # Experience points for finishing a lesson (0 = none), and for finishing every lesson open to the player.
+  xp-per-lesson: 50
+  final-xp: 500
+  # Console commands run for each finished lesson / when everything is finished. {player} and {lesson}
+  # are filled in. Example: - "eco give {player} 100"
+  lesson-commands: []
+  final-commands: []
+
+messages:
+  prefix: "&6&l[Tutorial] &r"
+  offer: "&eNew here? Take a quick, friendly tour of the server's plugins: type &f/tutorial&e."
+  lesson-done: "&a&lLesson complete: &f{lesson}&a!"
+  all-done: "&6&lYou finished every lesson! &eYou know the whole server now."

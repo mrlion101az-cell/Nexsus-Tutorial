@@ -1,0 +1,32 @@
+# Your own lessons and changes to the built-in ones. Edit, then run /tutorial reload.
+# The built-in lessons ship inside the plugin and update with it; this file is never overwritten.
+#
+# Hide built-in lessons you do not want players to see (by lesson id; /tutorial list shows the ids):
+#
+# hidden:
+#   - bathroom
+#   - vice
+#
+# Change a built-in lesson, or add a new one, by giving it the same (or a new) id. A lesson with the
+# same id replaces the built-in one completely. Steps are written as "<kind> [argument] :: text":
+#
+#   info :: text                    read it, then press Next
+#   command rime recipe :: text     completes when the player runs /rime recipe (any alias works)
+#   open Codex :: text              completes when a menu whose title contains "Codex" is opened
+#   have CRAFTING_TABLE 1 :: text   completes when the player carries that item (count is optional)
+#
+# A command step whose command is not installed on this server quietly becomes a reading step.
+# Use only safe, read-only commands in command steps. Put "permission: nexustutorial.staff" on a
+# lesson to show it to staff only, and "plugin: NexusSomething" to show it only if that plugin is
+# installed. Categories: start, money, craft, survive, community, staff (you can add your own under
+# "categories:" with a title, icon and description).
+#
+# lessons:
+#   server_rules:
+#     category: start
+#     title: "Our Server Rules"
+#     icon: WRITABLE_BOOK
+#     summary: "The house rules, in one minute."
+#     steps:
+#       - "info :: Be kind. No griefing. Ask before you borrow."
+#       - "info :: Have fun!"

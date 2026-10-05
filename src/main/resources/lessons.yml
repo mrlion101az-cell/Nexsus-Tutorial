@@ -1,0 +1,1189 @@
+# NexusTutorial -- the built-in lessons. This file ships inside the plugin and is replaced on update;
+# put your own changes in plugins/NexusTutorial/custom-lessons.yml instead.
+#
+# Step grammar:  "<kind> [argument] :: text"   kind = info | command | open | have
+# (see custom-lessons.yml for what each one does).
+
+categories:
+  start:
+    title: "Getting Started"
+    icon: COMPASS
+    description: "The basics every player needs on day one."
+  money:
+    title: "Money & Land"
+    icon: GOLD_INGOT
+    description: "Shopping, claiming land, and keeping your stuff safe."
+  craft:
+    title: "Skills & Crafting"
+    icon: CRAFTING_TABLE
+    description: "Level up your skills and make better gear."
+  survive:
+    title: "Survival & Adventure"
+    icon: IRON_SWORD
+    description: "Dangers, weather, travel and the wild parts of the world."
+  community:
+    title: "Community & Fun"
+    icon: CAKE
+    description: "Houses, friends, roleplay and the lighter side of the server."
+  staff:
+    title: "Staff Tools"
+    icon: COMMAND_BLOCK
+    description: "Admin tools. Only staff can see these lessons."
+
+lessons:
+  menu:
+    category: start
+    title: "Nexus Hub and Codex"
+    icon: ENCHANTED_BOOK
+    plugin: NexusMenu
+    summary: "One menu that reaches every system on the server, no commands needed."
+    steps:
+      - "info :: Every player carries a Nexus Codex, an enchanted book that opens the &eNexus Hub&r: one menu for the shops, realms, houses and every other system here."
+      - "open Nexus Hub :: Right-click your Nexus Codex, or type /menu, to open the Nexus Hub."
+      - "info :: Click a button to open that system's list of actions. Some buttons ask you to type text in an anvil prompt or to pick a player."
+      - "info :: Your Codex is bound to you, so it cannot be dropped, traded or lost, and it comes back after you respawn. If it ever goes missing, type /menu item for a new one."
+  starter:
+    category: start
+    title: "Your Starter Guide"
+    icon: COMPASS
+    plugin: NexusStarter
+    summary: "A guide book and menu that explains every system on the server."
+    steps:
+      - "info :: New players get a written Starter Guide book and a guide compass. Right-click the compass any time to browse the same guide as a menu, so you never have to wonder what to do."
+      - "command guide topics :: Type /guide topics to list every guide category and how many topics are inside it."
+      - "open Starter Guide :: Type /guide to open the menu. Click a category, then click a topic to read about it."
+      - "info :: Hover over a topic to read its description, and clicking it also copies the text into chat. Lost your book? /guide book gives a fresh copy. No compass yet? Try /guide item."
+  seasons:
+    category: start
+    title: "Seasons & Weather"
+    icon: SUNFLOWER
+    plugin: NexusSeasons
+    summary: "Spring, summer, fall and winter change plants, mobs and the sky."
+    steps:
+      - "info :: The world has a real calendar. Each year has four seasons of 30 days each, and the day and night cycle and the weather cycle run all the time."
+      - "info :: Seasons change the game. Plants grow differently, mob spawn rates shift, and winter piles up snow. A boss bar, ambient messages and seasonal music help you feel the change."
+      - "info :: Weather can get dramatic: strong wind, dry thunderstorms, fog, blizzards, sandstorms, earthquakes, tornadoes and meteor showers, plus waves, tsunamis and hurricanes by the coast."
+      - "info :: Wind pushes you around, but a heavy inventory makes you much harder to push. Chat announces when a big event starts and when it clears."
+      - "info :: In summer, standing in open sun too long brings heat exhaustion that escalates in stages. A Cooling Cap, a leather cap with a straw brim, protects you completely."
+      - "info :: Tip: the Cooling Cap is crafted with 2 hay bales and 3 leather in a helmet shape. Find shade or shelter when the weather turns, and keep an eye on chat."
+  achievements:
+    category: start
+    title: "Achievements"
+    icon: KNOWLEDGE_BOOK
+    plugin: NexusAchievements
+    summary: "Milestones from all over the server, with a pop-up toast."
+    steps:
+      - "info :: When you hit a milestone, a toast pops up just like a real Minecraft advancement: a title flash, a sound, and a card in chat. They come from plugins all over the server."
+      - "command achievements :: Type /achievements to see what you have earned so far, grouped by plugin, with an earned/total count at the bottom."
+      - "info :: Some surprise achievements stay hidden until you earn them. The rarest purple-frame ones are announced to the whole server when someone lands one."
+      - "info :: These live in /achievements, not the vanilla Advancements screen. Just play and explore, and new ones will pop up on their own. Check back now and then!"
+  endeavors:
+    category: start
+    title: "Daily Endeavors"
+    icon: CLOCK
+    plugin: NexusEndeavors
+    summary: "Daily and weekly goals, a login streak, and a cosmetics shop."
+    steps:
+      - "info :: Every day there are fresh goals, like slaying mobs, mining ore, walking, or playing for a while, plus bigger weekly ones. Everybody sees the same board. Finishing goals pays Endeavor Seals."
+      - "command endeavors board :: Type /endeavors board to see today's goals, this week's goals, your progress on each, and your Seal balance."
+      - "command endeavors streak :: Type /endeavors streak to see your login streak. Logging in on consecutive days earns bonus Seals at 3, 7, 14 and 30 days."
+      - "open Guild Vendor :: Type /endeavors vendor to open the shop. Seals only buy cosmetic things like banners, trophies and decorations, never gear or power."
+      - "info :: Tip: your board is also shown in chat when you log in. Missing a day resets your streak, so try to pop in daily!"
+  sentinel:
+    category: start
+    title: "Safety and Reporting"
+    icon: BELL
+    plugin: NexusSentinel
+    summary: "How to report a problem fast, and how the server helps keep chat safe."
+    steps:
+      - "info :: If someone is bothering you or making you uncomfortable, you can tell staff in seconds. You do not need to know which admin to message or take any screenshots."
+      - "info :: Type /report <player> <reason>. Every online admin gets an alert, and your recent chat with that player (last 10 minutes) is attached automatically. Limit: 3 reports per 10 minutes."
+      - "info :: Chat is protected too. Phone numbers, emails and Discord tags are blocked, and staff are alerted to worrying chat, like being asked to keep secrets or move to another app."
+      - "info :: Tip: never share real personal info online, and tell a parent or trusted adult if someone asks. Only report real problems, since staff read every report."
+  guardian:
+    category: start
+    title: "Age Groups and Safety"
+    icon: SHIELD
+    plugin: NexusGuardian
+    summary: "Verify your age group so you only play with players in your own group."
+    steps:
+      - "info :: This server keeps Kids, Teens and Adults apart. Once verified, you can only chat, message, party and fight with players in your own age group."
+      - "info :: Until you are verified you cannot interact with other players at all, not even other unverified ones. Staff can see and reach everyone, so they can keep everyone safe."
+      - "info :: Start with /nexusguardian verify <kids|teens|adults> for the group you really belong to, then answer each question with /nexusguardian answer <your answer>."
+      - "command nexusguardian status :: Type /nexusguardian status to check where your verification stands."
+      - "info :: Adults are verified as soon as the quiz is passed. Kids and Teens also need a staff member to approve them first, so be patient and always answer honestly."
+  spawn:
+    category: start
+    title: "Spawn Protection"
+    icon: SHIELD
+    plugin: NexusSpawn
+    summary: "Spawn is protected, but you can still use doors, chests and buttons."
+    steps:
+      - "info :: The area around spawn is protected so it stays tidy for everyone. It covers a very large area, 300 chunks by default, centered on the world spawn."
+      - "info :: You cannot place or break blocks there, including water and lava from buckets, and explosions will not destroy blocks in the zone."
+      - "info :: You can still use everyday things: doors, trapdoors, fence gates, buttons, pressure plates, chests, barrels, ender chests and shulker boxes."
+      - "info :: Tip: to build, head out past the protected zone and claim your own land."
+  resourcepacks:
+    category: start
+    title: "Choose Your Resource Pack"
+    icon: PAINTING
+    plugin: NexusResourcePacks
+    summary: "Pick the server resource pack you like, or play without one."
+    steps:
+      - "info :: On Java Edition the server can offer one or more resource packs. NexusResourcePacks lets you choose which one you want, or none at all."
+      - "command resourcepack :: Run /resourcepack to open the pack menu. The shortcuts /nexuspack and /rp work too."
+      - "info :: Click a pack to switch to it, or choose play without a pack. A checkmark shows your current choice. The server remembers it, and the menu may also open when you join."
+      - "info :: Tip: you can also use /resourcepack list to see the packs and /resourcepack select <id or none> to switch quickly."
+  denyblocks:
+    category: start
+    title: "Protected Zones"
+    icon: BEDROCK
+    plugin: NexusDenyBlocks
+    summary: "Staff-placed Deny Blocks protect a cube of land from building and damage."
+    steps:
+      - "info :: Staff can place a special Deny Block, a tagged bedrock block, under a structure to protect everything in a cube around it."
+      - "info :: Inside a protected zone you cannot place or break blocks, and nobody can take damage there, not even from weapons, falls or explosions."
+      - "info :: Everything with a function still works. Chests, doors, redstone and anything with a menu or on and off state can be used normally."
+      - "info :: If you cannot build somewhere, you may be inside a protected zone. Step outside it to build."
+  economy:
+    category: money
+    title: "Money and Shopping"
+    icon: EMERALD
+    plugin: NexusEconomy
+    summary: "Bank, shop, auctions, credit and stocks all in one."
+    steps:
+      - "info :: NexusEconomy is the server's money system. You have a bank balance, can withdraw physical cash, and can buy and sell in a category shop."
+      - "info :: In the shop menu a toggle in the corner switches between buying and selling, which helps on controllers. A quantity button cycles 1, 16, 32 and 64."
+      - "info :: There is also a bounty order board, an auction house, credit accounts with a paper credit card, and a stock market whose prices rise and fall."
+      - "info :: To visit a friend, use /tpa and their name to send a request. It costs money and the price climbs if you teleport many times in a short while."
+  realms:
+    category: money
+    title: "Land Claims & Teams"
+    icon: GOLDEN_SHOVEL
+    plugin: NexusRealms
+    summary: "Form a country, claim land, and protect your builds."
+    steps:
+      - "info :: NexusRealms combines teams and land claims. A team, called a country, claims chunks, and only that team can build there. Unclaimed open terrain is free for anyone."
+      - "info :: Teams have ranks. Leaders and Officers invite, kick and claim. Officers can use /realms claim radius to claim an area around them, up to 50 chunks at a time."
+      - "info :: Members can stake a small personal claim inside the country with /pclaim, like a house or shop. /pclaim trust <player> visitor or builder gives a friend access to just that claim."
+      - "info :: Teams choose whether outsiders may use doors, containers and PvP. Buckets are blocked on others' land, and a popup tells you when you enter another team's territory."
+  backpacks:
+    category: money
+    title: "Backpacks"
+    icon: BUNDLE
+    plugin: NexusBackpacks
+    summary: "A carryable backpack that upgrades over time and unlocks handy abilities."
+    steps:
+      - "info :: NexusBackpacks adds a real backpack item. You carry it with you and can trade it, so it is not locked to you like an ender chest."
+      - "info :: Backpacks come in tiers. Upgrading makes them bigger and better over time."
+      - "info :: Better backpacks unlock abilities, like a pickup magnet that pulls nearby items in, and auto-sort to keep your stuff tidy."
+      - "info :: Tip: because a backpack is a physical item, keep it safe. Anyone who holds it holds what is inside."
+  enderchest:
+    category: money
+    title: "Huge Ender Chest"
+    icon: ENDER_CHEST
+    plugin: NexusEnderChest
+    summary: "Your ender chest now has 20 pages of storage."
+    steps:
+      - "info :: NexusEnderChest turns your ender chest into a giant, personal storage space."
+      - "info :: Right-click any ender chest to open it. Instead of one screen it has 20 pages of 45 usable slots each, which is 900 slots in total."
+      - "info :: The contents belong to you and follow you to any ender chest. Use pages to sort things, such as one for building blocks and one for tools."
+  merchants:
+    category: money
+    title: "Smarter Villager Trading"
+    icon: EMERALD
+    plugin: NexusMerchants
+    summary: "Villagers have tiers, price memory and reputation with you."
+    steps:
+      - "info :: Villager and wandering trader trades are deeper now. Each villager has its own quality tier, a memory of prices, and a reputation with you."
+      - "command nexusmerchants inspect :: Look straight at a villager and type /nexusmerchants inspect to see its tier, your reputation and each trade's price."
+      - "info :: Every trade you complete nudges that trade's price up by about 5 percent, then it slowly eases back down over time. Do not spam one trade."
+      - "info :: Keep trading with the same villager to build reputation from Stranger up to Confidant (about 60 trades) for discounts on what you buy. Tiers run from Standard to Legendary."
+      - "info :: Restocks run on a clock: every 15 minutes each villager has a 40 percent chance to restock one trade, with a sound and particles. No need to sleep and hope."
+  creativesurvival:
+    category: money
+    title: "Creative Mode Costs"
+    icon: GOLD_NUGGET
+    plugin: NexusCreativeSurvival
+    summary: "Creative blocks cost coins, and you must eat once an hour."
+    steps:
+      - "info :: Creative mode still has free flight and instant building. But every item you pull out of the creative menu costs money, a small fraction of its normal shop price (15% by default)."
+      - "info :: Moving things around your own inventory is free, and so is deleting items. If you can't afford something, you just don't get it. Plan your build and pull what you need."
+      - "info :: In Creative you must eat once an hour, or you get dropped back to Survival. You get a warning chat message 5 minutes before. To eat, right-click open air while holding food."
+      - "command nexuscreativesurvival status :: Type /nexuscreativesurvival status to see how long you have until your next meal and how creative blocks are being priced."
+      - "info :: Tip: eat something early and the clock resets. After a drop to Survival, switch back to Creative whenever you are ready and a fresh hour starts."
+  husbandry:
+    category: craft
+    title: "Animal Breeding and Care"
+    icon: WHEAT
+    plugin: NexusHusbandry
+    summary: "Breed better livestock, keep them happy and healthy, and chase prime specimens."
+    steps:
+      - "info :: Cows, pigs, sheep, chickens, rabbits and horses carry inherited traits: vitality, speed, strength and fertility. Babies blend both parents' traits, so you can breed better animals."
+      - "info :: Animals also have Happiness from 0 to 100. Feeding raises it, while neglect and shearing lower it. An animal below 40 happiness will not breed."
+      - "info :: Animals can get sick. A Potion of Healing you brew yourself works as a remedy: right-click the sick animal with it."
+      - "command nexushusbandry inspect :: Look straight at an animal and type /nexushusbandry inspect to see its traits, happiness, illness and generation."
+      - "command nexushusbandry hof :: Type /nexushusbandry hof to see the Hall of Fame of the best animals ever bred."
+      - "info :: Tip: breed your best animals together and keep them fed and happy. With time and luck a rare Prime Specimen appears and joins the Hall of Fame."
+  alchemy:
+    category: craft
+    title: "Brewing and Alchemy"
+    icon: BREWING_STAND
+    plugin: NexusAlchemy
+    summary: "Order matters: brew strange potions and level up your brewing."
+    steps:
+      - "info :: Brewing here is a craft. The order you add ingredients to a brewing stand, across several brew cycles in a row, decides what potion you get. Your skill grows as you brew well."
+      - "info :: Example: add Nether Wart first, then Sugar on the next brew, and you get a Quickstep Tonic (speed). Other orders can ruin the batch or even scorch the stand."
+      - "command nexusalchemy skill :: Type /nexusalchemy skill to see your brewing level. Better brews give more XP, and higher levels unlock stronger recipes."
+      - "command nexusalchemy inspect :: Look straight at a brewing stand and type /nexusalchemy inspect to see the ingredient order so far and whether it matches a recipe."
+      - "info :: Tip: potions keep changing in real time. A brew left sitting for hours can mature a step better, but after many hours it can spoil, so drink your good ones in time."
+  cuisine:
+    category: craft
+    title: "Cooking and Food"
+    icon: COOKED_BEEF
+    plugin: NexusCuisine
+    summary: "Cook better food as you level, keep it fresh, and watch villager prices."
+    steps:
+      - "info :: Cooking in furnaces, blast furnaces and smokers now has a quality roll: Burnt, Plain, Hearty, Exquisite or Masterwork. Better quality dishes really feed you more."
+      - "info :: Open the furnace yourself to get credit for the cook. A higher cooking level improves your odds, and fresher ingredients help too."
+      - "command nexuscuisine skill :: Type /nexuscuisine skill to see your cooking level, total XP, and what you need for the next level."
+      - "command nexuscuisine inspect :: Hold a dish and type /nexuscuisine inspect to see its quality, how fresh it is, and whether it is wrapped for keeping."
+      - "info :: Dishes spoil over real time (about 90 minutes from cooking). To slow that to a quarter of the speed, sneak and right-click the dish while you have paper in your inventory."
+  crafting:
+    category: craft
+    title: "Crafting Mastery"
+    icon: CRAFTING_TABLE
+    plugin: NexusCrafting
+    summary: "Level up by crafting for bonus items, better gear, and secret recipes."
+    steps:
+      - "info :: Every time you craft at a crafting table or smithing table, you earn crafting XP. A higher level means more bonus items, ingredient savings, and higher quality gear."
+      - "info :: Early on, a craft can occasionally fail and waste its ingredients, less so as you level. Gear can come out Fine, Superior or Masterwork once you reach levels 5, 20 and 40."
+      - "command nexuscrafting skill :: Type /nexuscrafting skill to see your crafting level and how much XP you need for the next one."
+      - "command nexuscrafting recipes :: Type /nexuscrafting recipes to see the secret recipes: hidden shortcuts for a spyglass, bell and lantern that unlock as your level rises."
+      - "info :: The stonecutter, loom and cartography table also give you a small chance of a bonus copy, and that chance grows with your level."
+  enchants:
+    category: craft
+    title: "Custom Enchantments"
+    icon: ENCHANTED_BOOK
+    plugin: NexusEnchants
+    summary: "Extra enchantments like Lava Walker and Tide Walker for your gear."
+    steps:
+      - "info :: NexusEnchants adds many custom enchantments, well over a hundred, on top of vanilla. Some can be applied by staff or at an anvil."
+      - "info :: The first two are boot enchantments: Lava Walker and Tide Walker. Unlike Frost Walker, they keep the liquid as liquid and do not turn it into ice."
+      - "info :: Enchanted items show a glint when they carry one, even though the effect is custom."
+  magic:
+    category: craft
+    title: "Elemental Magic"
+    icon: BLAZE_ROD
+    plugin: NexusMagic
+    summary: "Craft elemental staves and bows, and level up as a wizard."
+    steps:
+      - "info :: NexusMagic lets you craft staves and bows for nine elements: Ice, Fire, Water, Lightning, Earth, Wind, Poison, Light and Dark. Right-click to cast a bolt."
+      - "have STICK 2 :: A staff is crafted in a pickaxe shape: three element ingredients across the top row and two sticks below. Grab a couple of sticks. (Bows use string instead.)"
+      - "info :: Example: an Ice staff uses Ice, Snow Block and Packed Ice across the top. Bolts have an on-hit effect and can leave a temporary effect on the ground where they land."
+      - "info :: You have a wizard level from 1 to 100. At low levels magic can backfire and hurt you. As you level up, backfires fade and your damage and rewards grow. Casting and combat both earn XP."
+  angler:
+    category: craft
+    title: "Fishing and Ponds"
+    icon: FISHING_ROD
+    plugin: NexusAngler
+    summary: "Ponds run out of fish, bait changes your luck, skill unlocks rare catches."
+    steps:
+      - "info :: Every small pond has its own stock of fish. Fish it a lot and it runs low, then slowly recovers over real time. The ocean never runs out."
+      - "info :: Bait helps. Look at water and drop one item: seeds mean less junk, gold nuggets mean more treasure, glowstone dust means rarer fish, and rotten flesh means faster bites with more junk."
+      - "command nexusangler skill :: Type /nexusangler skill to check your fishing level. Catching fish raises it, which means faster bites and access to rarer fish."
+      - "command nexusangler inspect :: Look straight at some water and type /nexusangler inspect to see how big that pond is and how many fish are left in it."
+      - "info :: Tip: rain speeds up bites, and some fish only come out at night. Your bait only lasts 45 seconds and only works in the pond you threw it into."
+  smelting:
+    category: craft
+    title: "Furnace Mastery"
+    icon: FURNACE
+    plugin: NexusSmelting
+    summary: "Smelting ore builds a skill: faster furnaces, bonus ingots, and risks."
+    steps:
+      - "info :: Smelting ores into ingots now trains a furnace-tending skill. A higher level means fuel lasts longer, ore cooks faster, and you get a better chance at bonus ingots."
+      - "command nexussmelting skill :: Type /nexussmelting skill to see your furnace-tending level and XP."
+      - "info :: Each ore smelt rolls an outcome. Most are normal. Ruined loses the ore, critical gives a bonus ingot, and rarely you get a legendary one. Higher levels make ruined less likely."
+      - "info :: Better fuel helps: coal, charcoal and blaze rods beat planks and sticks, and coal blocks or lava buckets are best. Furnaces side by side (up to 4 neighbors) give a small bonus."
+      - "command nexussmelting furnaces :: Type /nexussmelting furnaces to see how many furnaces you have tended lately and your overheat risk."
+      - "info :: Gotcha: tending more than 3 different furnaces within 30 seconds raises your chance of ruined smelts. Build one tidy array of furnaces instead of running all over your base."
+  forge:
+    category: craft
+    title: "Gear Wear and Repair"
+    icon: ANVIL
+    plugin: NexusForge
+    summary: "Iron, diamond and netherite gear wears down. Repair it at an anvil."
+    steps:
+      - "info :: Iron, diamond and netherite tools, swords and armor now wear down with real use, and can actually break. Each piece has a Condition meter from 0 to 100 percent."
+      - "command forge :: Type /forge to see how the system works and what each piece costs to repair."
+      - "info :: To repair, hold the damaged item and right-click an &eanvil&r with the matching material on you: iron for iron gear, diamond for diamond, netherite for netherite."
+      - "info :: The more damaged the item, the more it costs. Short on material? It repairs as far as what you have buys, and only uses what it needs."
+      - "command forge check :: Hold a piece of gear and type /forge check to see its exact Condition."
+      - "info :: Swords also have a Sharpness meter that makes them hit softer as it drops. Right-click a grindstone holding the sword to resharpen it with flint. At 0% Condition a tool cannot mine."
+  farming:
+    category: craft
+    title: "Golden Hoe Farming"
+    icon: GOLDEN_HOE
+    plugin: NexusFarming
+    summary: "Auto-replant, bonus crops and whole-field harvests with a golden hoe."
+    steps:
+      - "info :: Farming gets a big upgrade with one item: a plain golden hoe. Hold it and right-click a fully grown crop and it harvests AND replants itself instantly."
+      - "have GOLDEN_HOE :: Craft a golden hoe (two gold ingots and two sticks) and keep it in your inventory."
+      - "info :: Every harvest has a chance of bonus crops. &eSneak + right-click&r a grown crop to reap the whole patch around it, up to 3 blocks away, in one click."
+      - "info :: Right-click a crop that is not ready yet to nudge it forward one growth stage. It costs a little hoe durability and has a short cooldown."
+      - "command nexusfarming status :: Type /nexusfarming status to see this server's current farming numbers, like the bonus-yield chance."
+      - "info :: Keep harvesting the same soil to build Fertility (up to level 5) for better bonus odds. A carved pumpkin on a hay bale is a Scarecrow that stops crop trampling within 5 blocks."
+  hats:
+    category: craft
+    title: "Hats and Accessories"
+    icon: LEATHER_HELMET
+    plugin: NexusHats
+    summary: "Wear any block or item as a hat, or on top of or behind your head."
+    steps:
+      - "info :: NexusHats lets you wear almost any block or item on your head, like a funny hat."
+      - "info :: Hold something and use /hat to swap it into your helmet slot. Use /hat remove to take it off. Your old helmet is swapped back."
+      - "info :: For more style, /hataccessory top or /hataccessory back shows the item as a little accessory on top of or behind your head. Use /hataccessory remove to take it off."
+      - "info :: You can wear only one accessory at a time, and it is removed when you disconnect."
+  industry:
+    category: craft
+    title: "Machines and Androids"
+    icon: PISTON
+    plugin: NexusIndustry
+    summary: "Machines, androids and special items, unlocked by clearance."
+    steps:
+      - "info :: NexusIndustry is a tech and automation system with machines, androids that do jobs for you such as mining, and special custom items."
+      - "info :: It comes with a guide book. Your clearance level decides how much of the guide you can see, so you unlock more as you progress."
+      - "info :: Look for the guide to see what you can unlock next. Staff can tell you how clearance is earned on this server."
+  lode:
+    category: craft
+    title: "Mining Skill and Veins"
+    icon: IRON_PICKAXE
+    plugin: NexusLode
+    summary: "Level up mining, vein-mine ores and find ore with a Prospector's Rod."
+    steps:
+      - "info :: Mining now builds a Mining skill. Every ore you break earns XP, and higher levels make you mine faster. The top level is 50."
+      - "command nexuslode skill :: Type /nexuslode skill to see your level, your XP and whether vein mining is unlocked."
+      - "info :: At level 10, sneak while breaking an ore with a pickaxe strong enough for it and the whole connected vein (up to 32 blocks) comes out at once."
+      - "info :: /nexuslode give hands you a Prospector's Rod. Right-click it to scan for nearby ore. It reports a distance and compass direction, with a 20 second cooldown."
+      - "info :: Tip: your scan reaches farther as your level grows, so use the rod before you dig instead of digging blindly."
+  style:
+    category: craft
+    title: "Outfits and Dyeing"
+    icon: LEATHER_CHESTPLATE
+    plugin: NexusStyle
+    summary: "Save outfits, dye leather armor at a Loom, and join the Fashion Show."
+    steps:
+      - "info :: Save your favorite armor looks and swap between them instantly. You can also dye leather armor at a Loom and enter the server-wide Fashion Show."
+      - "command style mirror :: Type /style mirror to see exactly what you are wearing right now, including the dye color of any leather."
+      - "command style looks :: Type /style looks to list the outfits you have saved. You can keep up to 10."
+      - "info :: Put on an outfit and type /style save <name>. Later, /style wear <name> puts it back on. Saved looks remember the armor type and leather color, but not enchantments or custom names."
+      - "info :: To dye, hold leather armor in your main hand and a dye in your off hand, then right-click a Loom."
+      - "info :: In a Fashion Show, enter with /style fashionshow submit and vote for someone else with /style fashionshow vote <player>. Tip: staff open the show, and it lasts about 2 minutes."
+  craftersguild:
+    category: craft
+    title: "The Crafters Guild"
+    icon: CRAFTER
+    plugin: NexusCraftersGuild
+    summary: "Become a blacksmith with Auto Crafters, contracts, and world events."
+    steps:
+      - "info :: The Crafters Guild turns the Auto Crafter into a profession. Claim a forge, and everything your Crafters make there earns smithing XP, even when run by hoppers and redstone."
+      - "info :: Level decides the quality of your gear: Crude, Standard, Fine (level 5), Masterwork (level 15) and Legendary (level 30). More Crafters won't help, only levels will."
+      - "command guild profile :: Type /guild profile to see your smithing level, XP, and Guild reputation."
+      - "command guild contracts list :: Type /guild contracts list to see the standing contracts, like bringing iron or diamonds to the Guild for gold, XP and reputation. Hand one in with /guild contracts turnin."
+      - "command guild events :: Type /guild events to see roaming events that are live right now, like raider fights, rich veins and supply caravans. Anyone can join in!"
+      - "info :: Claim your forge by standing where you want it and using /guild forge claim <name>. Crafters you place inside that circle count as yours."
+  arcanum:
+    category: craft
+    title: "The Enchanting Table"
+    icon: ENCHANTING_TABLE
+    plugin: NexusArcanum
+    summary: "Build a better bookshelf ring for rarer, stronger enchantments."
+    steps:
+      - "info :: The enchanting table is stronger here. A well-built ring of bookshelves can reach costs well past level 30 and unlock five rarity tiers, from Common up to Mythic."
+      - "info :: Normal bookshelves count (up to 15), chiseled bookshelves count by how many slots hold books, and a balanced, symmetric ring earns a bonus. Keep the air gap between table and shelves."
+      - "command nexusarcanum inspect :: Look straight at an enchanting table and type /nexusarcanum inspect to see its shelf count, symmetry, score, and the best rarity tier it can reach."
+      - "info :: Epic and Mythic offers can give two or even three enchantments at once, even treasure ones like Mending. Rare tiers are never guaranteed, but a great table improves your odds."
+  titles:
+    category: craft
+    title: "Titles, Colors & Names"
+    icon: NAME_TAG
+    plugin: NexusTitles
+    summary: "Pick a chat title, banner, name color, font and roleplay nickname."
+    steps:
+      - "info :: NexusTitles makes you stand out in chat. It is all free, and only changes how your name shows when you talk, never your real username."
+      - "info :: Pick a title and a banner from lists chosen by the admins. A banner is a symbol shown on both sides of your name. You can also choose one of the 16 vanilla name colors."
+      - "info :: Fonts restyle your messages with Unicode lettering, such as small caps, fullwidth, bold, italic, monospace and circled. A roleplay nickname uses /titles nick."
+      - "info :: Run /titles view to see your current title, banner, color, font and nickname."
+      - "info :: /titles reset puts it all back to normal. Nicknames are length-limited and cannot copy another online player's real name."
+  wands:
+    category: craft
+    title: "Wands and Spells"
+    icon: STICK
+    plugin: NexusWands
+    summary: "Bond a wand, learn spell pages, and speak incantations in chat."
+    steps:
+      - "info :: Wands are special sticks, and staff hand out wands and spell pages. To cast, hold your wand and type the incantation in chat. It must match exactly, and the words never reach other players."
+      - "info :: Your wand picks you: your first successful cast gives it a permanent wood (more forgiving) and core (more powerful). Using someone else's wand works, but weaker and with more fumbles."
+      - "info :: Right-click a spell page to learn that spell for good. Each successful cast raises your mastery, up to level 20, which means fewer backfires and stronger spells."
+      - "info :: Spells: lumos and nox (a light that follows you, and off), alohomora (opens the door, trapdoor or gate you look at), wingardium leviosa (lifts a loose item), and protego (a brief shield)."
+      - "info :: Also expelliarmus (makes the player you look at drop their held item) and expecto patronum (a glowing guard wolf for 45 seconds). Spells hit whatever you aim at."
+      - "info :: Casting costs Focus: 100 at most, regaining about 4 per second. A backfire only slows you down and never hurts anyone else. Aim carefully and master your favorite spell first."
+  map:
+    category: craft
+    title: "Your World Map"
+    icon: FILLED_MAP
+    plugin: NexusMap
+    summary: "A live map in your hand that follows you around."
+    steps:
+      - "info :: The Nexus map is a map item that shows the terrain around you. Hold it in your hand and it updates live, recentering on you as you move."
+      - "info :: Other players and points of interest show up as markers on the map, and you can switch between zoomed-in, middle and zoomed-out views."
+      - "info :: Tip: the map only refreshes while you are holding it, so keep it in your hand when you want to see where you are."
+  frontier:
+    category: survive
+    title: "Bounties and Caravans"
+    icon: GOLD_INGOT
+    plugin: NexusFrontier
+    summary: "Put bounties on players and trade between posts for profit."
+    steps:
+      - "info :: NexusFrontier adds a bounty system and trade caravans. Both are about money and risk."
+      - "info :: Placing a bounty costs real money. Whoever kills the target collects it. Cancel for a partial refund; if it expires, you get a full refund."
+      - "command bounty list :: Type /bounty list to see the active bounties on the server."
+      - "info :: For caravans, admins set up trade posts that buy and sell materials at different prices. Carry goods from one post to another to profit, and watch out for danger on the way."
+  integrity:
+    category: survive
+    title: "Building Support"
+    icon: STONE_BRICKS
+    plugin: NexusIntegrity
+    summary: "Builds need support. Remove too much and blocks crack and fall."
+    steps:
+      - "info :: Builds now need support. A block above ground level must connect back down to the ground within a span that depends on its material."
+      - "info :: Stronger materials reach farther: deepslate 10, stone 8, planks 5, dirt 3, glass only 2. Anything not listed holds 6 by default."
+      - "info :: Break too much of what holds a build up and the unsupported blocks crack for about 3 seconds, then fall as real falling blocks. Step out from underneath!"
+      - "info :: Rebuild the support during those 3 seconds and the blocks are saved. Chests, furnaces and crafting tables are never checked, and the spawn area is protected."
+      - "info :: Tip: use pillars and walls, and never hollow out the base of a big build."
+  combat:
+    category: survive
+    title: "Combat Streaks and Gear"
+    icon: IRON_SWORD
+    plugin: NexusCombat
+    summary: "Chain hits for bonus damage, eat for buffs, wear sets for power."
+    steps:
+      - "info :: NexusCombat rewards clean fighting. Each hit you land on a mob without being hurt adds bonus damage. Taking damage resets it and may start a short bleed."
+      - "info :: Cooked food gives regeneration plus an extra effect that depends on the food. Raw food gives you poison, hunger and nausea. Cake gives the best buffs."
+      - "info :: Craft Obsidian gear for extra attack and armor. Wear all four pieces of one tier to get a set bonus. Bedrock gear is even stronger but comes with a slowness tradeoff."
+      - "info :: With a good streak, a trident can strike lightning on a mob, and a netherite sword can set the ground near it on fire. Streaks only build against mobs, not players."
+  drones:
+    category: survive
+    title: "Drones and Security"
+    icon: SPYGLASS
+    plugin: NexusDrones
+    summary: "Drones, turrets and a security suite for keeping watch."
+    steps:
+      - "info :: NexusDrones adds drones, turrets and security gadgets. The drones are the Surveillance Drone and the Kamikaze Drone, and the turret is the Sentry Turret."
+      - "info :: The security suite has a Security Camera, a Laser Post, a Ghost Door and a Security Tablet."
+      - "info :: Together they give you ways to guard a base or keep an eye on it. Ask a staff member how to get the items and use them on this server."
+  grave:
+    category: survive
+    title: "Graves and Corpse Runs"
+    icon: PLAYER_HEAD
+    plugin: NexusGrave
+    summary: "When you die, your items wait in a grave that slowly decays."
+    steps:
+      - "info :: When you die, your items and XP are sealed in a grave where you fell, marked by a stone block with a head on top. Nothing scatters on the ground."
+      - "info :: Right-click the grave to open Grave Contents and take your things back. After you respawn you get Slowness and Weakness, and your compass points to your grave, until it is emptied."
+      - "command nexusgrave list :: Type /nexusgrave list to see every grave you have left and how weathered each one is."
+      - "info :: Graves slowly decay from Fresh to Weathered to Overgrown, then collapse for good, which takes about 30 real hours by default. &eAnyone&r can open an unclaimed grave, so hurry back."
+      - "info :: Tip: /nexusgrave epitaph <text> writes a message your next grave will show. Right-clicking your own grave with a Nether Star stops it decaying forever, but not from being looted."
+  migrations:
+    category: survive
+    title: "Great Migrations"
+    icon: COW_SPAWN_EGG
+    plugin: NexusMigrations
+    summary: "Huge herds roam the map, peaceful or dangerous."
+    steps:
+      - "info :: Every so often a huge herd of 30 to 60 or more mobs migrates across the map together. It can be a peaceful herd of animals, or a dangerous pack of wolves, zombies, skeletons or spiders."
+      - "info :: A herd forms a fair distance from a random player and drifts together in one direction. Herd mobs have no special protection, so you can hunt, fight or tame them like any other mob."
+      - "info :: The world also has a living ecosystem. Predators eat prey, animals breed when there is plenty of food, and overharvesting grass, leaves and logs in an area takes real time to recover."
+      - "command nexusmigrations ecosystem status :: Run /nexusmigrations ecosystem status to see the food score and animal populations in the area you are standing in."
+      - "info :: Tip: if animals are scarce near your base, let the surrounding area recover for a while."
+  growth:
+    category: survive
+    title: "Growing Up"
+    icon: WHEAT_SEEDS
+    plugin: NexusGrowth
+    summary: "You start small and grow slowly over real years."
+    steps:
+      - "info :: In NexusGrowth you start out small and grow bigger over real calendar time since your first join. It takes about 20 years to reach full size, so veterans are bigger."
+      - "info :: Your size runs from about half normal height up to 1.6 times normal. It is a real size change, not just visual."
+      - "command nexusgrowth status :: Type /nexusgrowth status to see your current size and how far along you are."
+      - "info :: You get a chat message at 25, 50, 75 and 100 percent. The shop also has a Sizes tab where you can buy a size permanently. That locks it in and stops growth for good."
+  hatchlings:
+    category: survive
+    title: "Hatchling Crystals"
+    icon: AMETHYST_SHARD
+    plugin: NexusHatchlings
+    summary: "Shrink and tame a mob with a thrown crystal, then watch it grow up."
+    steps:
+      - "info :: Throw a Hatchling Crystal at a mob and it shrinks to a tiny hatchling and becomes your loyal companion. It then grows to full size over about 14 real days."
+      - "info :: Craft a crystal from an amethyst shard, a gold ingot, a slime ball and an ender pearl. Right-click to throw it. The first mob that comes within 3 blocks gets tamed."
+      - "command nexushatchlings :: Type /nexushatchlings for the full guide on crystals, growth and traits."
+      - "info :: A hatchling follows you, never hurts you, and is protected from almost all harm while it grows. Each one rolls 1 or 2 special traits when tamed, like extra health or speed."
+      - "command nexushatchlings list :: Type /nexushatchlings list to see your hatchlings and how grown they are."
+      - "info :: Tip: /nexushatchlings release lets your nearest hatchling go. It keeps its size but is no longer yours or protected, so only release one on purpose."
+  legends:
+    category: survive
+    title: "Legendary Cryptids & Relics"
+    icon: DRAGON_HEAD
+    plugin: NexusLegends
+    summary: "One-of-a-kind creatures, cash bounties and powerful relics."
+    steps:
+      - "info :: Legendary Cryptids are one-of-a-kind creatures that appear in the world. Each one can only be defeated once per cycle, so a sighting is a big moment."
+      - "info :: Defeating a cryptid pays a real cash bounty straight into your balance, and it can also drop special loot and Relics."
+      - "info :: Relics are server-tracked treasures with real power and real drawbacks. If the server uses bills, holding a relic can also charge you a recurring upkeep."
+      - "info :: You also earn Fame and Titles for your deeds. Tip: cryptids are rare, so ask around before you go hunting."
+  dungeons:
+    category: survive
+    title: "Maze Dungeons"
+    icon: SKELETON_SKULL
+    plugin: NexusDungeons
+    summary: "Huge underground mazes with traps, crypts, treasure, and a boss."
+    steps:
+      - "info :: Dungeons are huge underground mazes with dead ends, traps, monsters and treasure rooms. Reaching the way down to the next floor is part of the challenge. Bring food and a good weapon!"
+      - "info :: The walls cannot be broken, built through, or blown up, not even by creepers. Watch for pressure plates: they hurt and can spring an ambush. Crypts have chests and a skeleton guard."
+      - "command dungeons list :: Type /dungeons list to see which dungeons exist and whether each is still forming, uncleared, or cleared."
+      - "info :: The entrance is a sealed iron block door. Right-click it holding that dungeon's key, a paper item staff hand out. The boss waits at the far end of the last floor with the best loot."
+      - "info :: Tip: team up with /dungeons party invite <player>, then they type /dungeons party accept. Your whole party hears when the boss falls."
+  giants:
+    category: survive
+    title: "Mob Ages and Giants"
+    icon: ZOMBIE_SPAWN_EGG
+    plugin: NexusGiants
+    summary: "Mobs have ages that decide their size, from tiny to huge."
+    steps:
+      - "info :: In NexusGiants every naturally spawned mob has an age from 1 to 100, shown over its head like Zombie (Age 40). Older mobs are bigger and younger ones are smaller."
+      - "info :: The size is real, so a big mob has a bigger hitbox, more health, a harder hit and better loot and experience. Passive animals get ages too, and fewer mobs spawn overall."
+      - "info :: Some mobs can be ridden, and some wear robot-style skins."
+      - "info :: A throwable Miniature Crystal shrinks a mob to its smallest size and tames it for good. Your mini mobs follow you and will not hurt you, so you can build a tiny army."
+  wards:
+    category: survive
+    title: "Mob Wards"
+    icon: ARMOR_STAND
+    plugin: NexusWards
+    summary: "Craft a statue that keeps one kind of mob away from your base."
+    steps:
+      - "info :: A ward is a craftable statue for one mob type. Place it and that mob won't spawn nearby, and any that wander in get steadily pushed back out."
+      - "command wards :: Type /wards to list every ward, what it keeps away, its range, and its exact recipe."
+      - "info :: Ingredients go anywhere in the grid. Zombie Ward: stone, stick, 2 rotten flesh, iron ingot (18 blocks). Creeper Ward: stone, stick, 3 gunpowder (20 blocks)."
+      - "info :: Right-click a block while holding a ward to place the statue on top. Gotcha: one hit destroys a statue, and each ward only protects against its own mob. Place it somewhere safe."
+  expeditions:
+    category: survive
+    title: "Party Expeditions"
+    icon: COMPASS
+    plugin: NexusExpeditions
+    summary: "Team up for Hunt or Explore trips and earn bigger XP rewards together."
+    steps:
+      - "info :: Form a party of up to 10 with /expedition party create, then /expedition party invite <player>. They have 2 minutes to type /expedition party accept."
+      - "info :: Start a trip with /expedition start hunt <kills> or /expedition start explore <blocks>. Stay within 24 blocks of a teammate or your progress counts for only half."
+      - "info :: Finish with /expedition complete to give everyone online in your party XP. You can turn in early for partial credit, or use /expedition abandon to cancel with no reward."
+      - "command expedition bonds :: Type /expedition bonds to see your bond streaks. Finishing an expedition with the same friend on consecutive days grows a bonus, up to +60%."
+      - "info :: Bigger parties and longer streaks mean more XP. Playing solo is fine and always pays the normal base amount, you just miss the team bonus."
+  companions:
+    category: survive
+    title: "Pet Companions"
+    icon: BONE
+    plugin: NexusCompanions
+    summary: "Adopt a wolf, cat, or parrot, feed it, level it up, and bring it along."
+    steps:
+      - "info :: Right-click an untamed wolf, cat, or parrot with a Name Tag to adopt it as a Companion. Rename the tag in an anvil first if you want to choose its name."
+      - "info :: Feed your Companion its favorite food to level it up: cooked meat for wolves, raw fish for cats, seeds for parrots. Each level adds a little health and speed, up to level 10."
+      - "info :: Right-click with an empty hand to pet them and keep their mood up. Wolves and cats obey /companion sit, and /companion trick makes them do a happy hop."
+      - "command companion status :: Type /companion status to see each of your Companions with their name, level, XP and mood."
+      - "info :: Tip: a Companion near you follows you through portals, but not if it is sitting. A Companion that dies is gone for good, so look after them!"
+  portals:
+    category: survive
+    title: "Portal Network"
+    icon: OBSIDIAN
+    plugin: NexusPortals
+    summary: "Named Nether portals, a travel menu, upkeep and stronghold tracking."
+    steps:
+      - "info :: Every Nether portal you light joins your portal network. Step into one and choose your destination from a menu of the portals you have discovered."
+      - "command nexusportals list :: Type /nexusportals list to see the portals you have discovered and how stable each one is."
+      - "info :: Portals wear down over time. Right-click a portal frame with Glowstone Dust to restore it. Unstable portals can make a crossing rough, with a little damage and nausea."
+      - "info :: A portal that hits zero goes dark. Relight it while holding Blaze Powder and an Ender Pearl to keep its name. Skip that and it comes back as a nameless wild portal."
+      - "command nexusportals stronghold :: Throw Eyes of Ender from two or more spots, then type /nexusportals stronghold to see a triangulated estimate."
+      - "info :: Tip: /nexusportals rename <current name> <new name> renames a portal, and keeping some Glowstone Dust handy keeps your routes safe."
+  rails:
+    category: survive
+    title: "Rail Network"
+    icon: MINECART
+    plugin: NexusRails
+    summary: "Stations, routes, and furnace minecarts that drive themselves."
+    steps:
+      - "info :: Rails are now a transit network. Builders register stations at detector rails and link two with a named route, and a furnace minecart can then drive itself along it with no rider."
+      - "command nexusrails station list :: Type /nexusrails station list to see every registered station and where it is."
+      - "command nexusrails route list :: Type /nexusrails route list to see each route, its track condition, and how many junctions it has."
+      - "info :: Stand at one of a route's stations and type /nexusrails dispatch <route> to send a cart off. Setting up stations and routes needs builder permission, so ask staff."
+      - "info :: Track slowly wears down, and an impassable route won't dispatch until repaired. Hold iron ingots in your hand and type /nexusrails repair <route>."
+      - "info :: Tip: hold 8 gold ingots and type /nexusrails upgrade <route> speed (or fuel) to make a route faster or more fuel-efficient. Each can be upgraded up to level 5."
+  hydro:
+    category: survive
+    title: "Real Water and Lava"
+    icon: WATER_BUCKET
+    plugin: NexusHydro
+    summary: "Ponds can run dry and broken dams really flood. Oceans stay endless."
+    steps:
+      - "info :: Water and lava now have real volume. A pool, tank or moat you build is finite, while oceans and other huge bodies stay endless, just like vanilla."
+      - "info :: Scooping from a pond you built has a small chance (about 15 percent by default) to use up that source block. Scoop too often and the pond can run dry."
+      - "info :: Break a dam wall and the water or lava really drains from the reservoir into any lower empty space it opens onto, flooding it from the bottom up."
+      - "info :: Tip: stay clear below dams and lava pools, and plan before you break one. The area around spawn is protected from this."
+  redstone:
+    category: survive
+    title: "Redstone Engineering"
+    icon: REDSTONE
+    plugin: NexusRedstone
+    summary: "Logic gates, clocks, wireless signals, smarter hoppers, and an Engineer skill."
+    steps:
+      - "info :: Redstone gets a new tier of parts: logic gates, memory, clocks, sensors, wireless, and filtering hoppers. Vanilla redstone still works. You earn Engineer levels to unlock bigger parts."
+      - "info :: Wrench: iron ingot, redstone, iron ingot across the top, then two sticks down the middle. AND gate (makes 2): torch, redstone, torch on top, with a quartz block below the redstone."
+      - "command redstone skill :: Type /redstone skill to see your Engineer level, XP, and what your level lets you do."
+      - "command redstone list :: Type /redstone list to see every component and the Engineer level that unlocks it."
+      - "info :: A gate faces away from you: its sides are inputs and the block in front is the output. Right-click with the wrench to inspect it. Lost your Engineer's Manual book? Use /redstone manual."
+  horror:
+    category: survive
+    title: "Sanity and Blood Moons"
+    icon: SCULK_SENSOR
+    plugin: NexusHorror
+    summary: "A Sanity meter, spooky sightings and a Blood Moon event."
+    steps:
+      - "info :: NexusHorror adds a Sanity meter, separate from health. It drops slowly when you are alone in the dark, underground, or during a Blood Moon."
+      - "info :: Sanity recovers near other players, in the light, and while sleeping. When it is low, you may see and hear things that are not real."
+      - "info :: Ghost sightings are a spooky part of this. A ghost appears briefly nearby and vanishes, and it is harmless."
+      - "info :: Now and then a server-wide Blood Moon makes hostile mobs stronger for a limited time. Stay in the light, stay near friends, and keep your gear ready."
+  somnus:
+    category: survive
+    title: "Sleep and Dreams"
+    icon: RED_BED
+    plugin: NexusSomnus
+    summary: "Sleep debt, dreams, and beds that only become home after a full rest."
+    steps:
+      - "info :: Sleep matters now. Waking up before a rest is finished builds sleep debt, and a full rest pays it down. At 4 debt or more you wake up slowed with mining fatigue."
+      - "command nexussomnus status :: Type /nexussomnus status to see your sleep debt, your last dream, and your home-bed cooldown."
+      - "info :: Sleeping brings a dream. If you are hurt, near monsters, or in debt, a nightmare (nausea and slowness) is likelier. A calm, safe night can leave you well rested, with regeneration and haste."
+      - "info :: A bed only becomes your respawn point after a full rest in it. Switching to a different bed has a 24-hour cooldown and costs you that night's well-rested bonus."
+      - "info :: Fun twist: some rests have a 15% chance of letting your mind drift free as a flying spectator for about 15 seconds. Then you are pulled back exactly where you left off."
+  minds:
+    category: survive
+    title: "Smarter Mobs"
+    icon: ZOMBIE_HEAD
+    plugin: NexusMinds
+    summary: "Zombies, skeletons and pillagers have personalities, grudges and pack tactics."
+    steps:
+      - "info :: Zombies, skeletons and pillagers have personalities now. Cowards flee early, Aggressive ones fight on, and a rare Alpha never runs away."
+      - "info :: Hit one and it holds a grudge for about 30 minutes, calls up to 4 nearby mobs of its kind, and they may flank you. Do not fight in the open."
+      - "info :: Mobs speak too: garbled text floats above them during fights. Right-click a villager or pillager to hear a line of dialogue."
+      - "command nexusminds halloffame :: Type /nexusminds halloffame to read the rarest lines mobs have spoken."
+      - "info :: You can suggest rare lines with /nexusminds submit <situation> <text>. If the community votes one up with /nexusminds vote <id> up, it can go live. Keep it friendly!"
+  vitals:
+    category: survive
+    title: "Stamina, Injury & Gas"
+    icon: PAPER
+    plugin: NexusVitals
+    summary: "Stamina, injuries, collapses, toxic gas and stealth."
+    steps:
+      - "info :: NexusVitals adds hardcore body systems. Stamina drains when you sprint and when you land hits, then refills after you rest. At zero your attacks are weaker and you cannot start sprinting."
+      - "info :: A hard fall can give you a limp (slowness) and a hard hit can make you bleed. Neither heals alone. Right-click a Splint to cure a limp, or a Bandage to cure bleeding."
+      - "have STICK 2 :: Splints are made from 2 sticks. A Bandage uses wool and a stick. Grab some sticks."
+      - "info :: Long unsupported block spans creak, then collapse, so add support like iron bars, fences or walls. Deep enclosed caves hold toxic gas: wear a Gas Mask (leather helmet and 2 iron ingots)."
+      - "info :: Stealth: sneaking, tall grass and leather armor make hostile mobs less likely to notice you. Gold or diamond armor makes you easier to spot."
+  rime:
+    category: survive
+    title: "The Long Winter"
+    icon: BLUE_ICE
+    plugin: NexusRime
+    summary: "Winter hordes, a frost boss, and dragonglass weapons."
+    steps:
+      - "info :: Now and then in winter, a frost-wreathed Rimewalker rises about 80 blocks from one player and marches on them with an army of Rimebound. Everyone in that world hears the warning."
+      - "command rime status :: Type /rime status to see where the horde is, who it hunts, and how far away it is."
+      - "command rime recipe blade :: Type /rime recipe blade to see how a Dragonglass Blade is crafted."
+      - "info :: Craft shards first: 1 obsidian makes 2 Dragonglass Shards. The blade is 3 shards, a diamond and a stick. A dagger is 2 shards over a stick, and arrows are shard, stick, feather in a row."
+      - "info :: Ordinary weapons only do 5% to the Rimewalker, so use dragonglass or fire. Leather armor, or standing within 3 blocks of a campfire, furnace, torch or lava, keeps the frost off."
+  requiem:
+    category: survive
+    title: "The Thinning Veil"
+    icon: SOUL_LANTERN
+    plugin: NexusRequiem
+    summary: "When many players die in a short time, the world grows more dangerous."
+    steps:
+      - "info :: The server keeps count of every player death. If many players die within a short window (8 within 10 minutes by default), the veil thins and the whole server feels it."
+      - "info :: While the veil is thin, newly spawned hostile mobs are tougher and faster, and a patch of ground near where the deaths happened turns into corrupted blocks. Claimed land is never marked."
+      - "info :: It takes real calm to recover. Deaths must stay very low for a sustained stretch of time, and any new spike resets the countdown."
+      - "info :: Tip: if you hear the veil is thin, take extra care, gear up, and look out for your friends."
+  undertow:
+    category: survive
+    title: "The Undertow"
+    icon: IRON_PICKAXE
+    plugin: NexusUndertow
+    summary: "Over-mine or over-farm a chunk and the world fights back."
+    steps:
+      - "info :: Every chunk keeps a depletion score. Mining ore adds a lot, and harvesting crops adds a little. Take too much from one chunk and the world starts to push back."
+      - "info :: Once the limit is passed, extra stronger mobs spawn there and players standing in that chunk keep getting a Weakness effect. The further past the limit, the stronger the mobs."
+      - "info :: It is fully reversible. Leave the chunk alone for a while and the score decays, and retaliation stops once it falls low enough."
+      - "info :: Tip: spread your mining across different chunks and let busy ones rest. Claimed land is never affected."
+  survival:
+    category: survive
+    title: "Thirst, Disease & Climate"
+    icon: WATER_BUCKET
+    plugin: NexusSurvival
+    summary: "Stay hydrated, stay healthy, and dress for the weather."
+    steps:
+      - "info :: NexusSurvival adds a thirst bar. Drink water bottles to keep it topped up, and a chat alert warns you when it gets low. If it runs out you take dehydration damage."
+      - "info :: A Canteen holds 6 sips and refills when you right-click a water source. Untreated water is drinkable but risky, so purify it by boiling it in a furnace."
+      - "info :: Diseases are real but rare. Dirty armor, contaminated water and contagious mobs can infect you, and each disease has its own cure."
+      - "info :: Radiation zones drain your oxygen and can suffocate you. Winter snow chills you in stages. Summer sun brings heat exhaustion and faster thirst, but a Sun Cap protects you."
+      - "info :: Tip: shelter protects you from both cold and heat. In spring and fall, you may even get a free Regeneration boost outdoors."
+  legion:
+    category: survive
+    title: "Tiny Animal Army"
+    icon: GOAT_HORN
+    plugin: NexusLegion
+    summary: "Recruit small animals into a tiny army and command it with a War Horn."
+    steps:
+      - "info :: Build a tiny army from small animals like bunnies, chickens, cats, foxes, piglets, lambs and frogs. You need a Recruitment Banner and a War Horn."
+      - "command legion recipes :: Type /legion recipes to see how to craft the Recruitment Banner and the War Horn."
+      - "info :: Right-click a small animal with the banner to enlist it. It shrinks and costs a few gold nuggets. Name-tagged animals, tamed pets and other players' soldiers cannot be enlisted."
+      - "info :: War Horn: right-click a player or monster to send your army, right-click the air to call it back, or sneak and right-click the air to switch between follow and hold."
+      - "command legion status :: Type /legion status to see how many soldiers you have."
+      - "info :: Heads up: armies can attack players except near spawn, in creative mode, or anyone on your /legion trust list. /legion disband releases everyone."
+  momentum:
+    category: survive
+    title: "Traversal Skill and Stamina"
+    icon: DIAMOND_BOOTS
+    plugin: NexusMomentum
+    summary: "Travel to level up: run faster, jump higher, fall softer, unlock new moves."
+    steps:
+      - "info :: Just getting around builds Traversal skill. Walking, sprinting, swimming and climbing all earn XP, and levels make you faster, higher-jumping and tougher against falls."
+      - "command nexusmomentum skill :: Type /nexusmomentum skill to see your level, distance traveled and which abilities you have unlocked."
+      - "command nexusmomentum stamina :: Type /nexusmomentum stamina to check your stamina. Sprinting and climbing drain it, resting refills it."
+      - "info :: Level 5 unlocks Landing Roll: hold sneak as you hit the ground to cut fall damage. Level 8 unlocks Wall Climb, and level 15 an Air Dash (press sprint in the air)."
+      - "info :: Level 25 unlocks Double Jump with the swap-hands key (F by default) in the air. Every move costs stamina, and ice and slime make you slide faster."
+  warbeasts:
+    category: survive
+    title: "Truce Crystals"
+    icon: PRISMARINE_SHARD
+    plugin: NexusWarbeasts
+    summary: "Make hostile mobs stop attacking you, then lead them like livestock."
+    steps:
+      - "info :: A Truce Crystal calms a hostile mob toward you. Throw it in front of the mob, and the mob picks up the crystal and stops attacking you."
+      - "info :: A calmed mob can be put on a lead, walked around and penned behind fences like livestock. Ender Dragons, Withers and Wardens cannot be calmed by default."
+      - "info :: It only works for you. Anyone who has not given the mob a crystal is still a target, and several players can each calm the same mob toward themselves."
+      - "info :: Careful: if you hurt a calmed mob, it may turn on you again. Crystals may be crafted from a prismarine shard, a gold ingot and a ghast tear."
+  vice:
+    category: survive
+    title: "Vice (Fictional Substances)"
+    icon: FERMENTED_SPIDER_EYE
+    plugin: NexusVice
+    summary: "A fictional potion-and-drink system with real in-game risks."
+    steps:
+      - "info :: NexusVice adds invented, fictional substances and drinks to the game. None of it stands for real drugs, and everything has made-up names and its own recipes."
+      - "info :: Using them has in-game effects that build with each dose. Too much brings stumbling, vomiting, a blackout with damage over time, and crashes afterward. Some combinations are more dangerous."
+      - "info :: If you overdo it, /vice rehab is the way back, or you can wait it out somewhere safe. A guidebook is given once when you join, and /vice book gets you another."
+  events:
+    category: survive
+    title: "World Events"
+    icon: FIRE_CHARGE
+    plugin: NexusEvents
+    summary: "Random server-wide events: meteors, invasions, storms and blessings."
+    steps:
+      - "info :: NexusEvents fires a random event now and then, and it affects every player online at once."
+      - "info :: Four kinds: meteor shower (lightning and sound for show), mob invasion (real hostile mobs), sudden storm, and blessing hour (Regeneration and Speed for all)."
+      - "info :: Keep a weapon and some food handy, since an invasion is a real fight. Blessing hour is a good time to go exploring."
+      - "info :: Messages in chat explain what is happening, so you are never left guessing."
+  bloodline:
+    category: community
+    title: "Bloodline Traits"
+    icon: WHEAT
+    plugin: NexusBloodline
+    summary: "Kids inherit a trait from how their parents really play."
+    steps:
+      - "info :: NexusBloodline works with the family system. When a family kid grows up, it gets one lasting trait based on how its two parents have actually played."
+      - "info :: It tracks three things: ores mined, blocks placed and hits landed on mobs. Whichever score is highest decides the trait: Mining, Building, Fighting, or Balanced."
+      - "info :: Stand near your grown kid and you get a small passive boost. The boost matches the trait: Haste, Strength, Saturation or Regeneration. It fades when you walk away."
+      - "info :: Tracking only counts from when the plugin was installed, and a kid's trait can take up to a minute to appear after growing up."
+  oddities:
+    category: community
+    title: "Body Oddities"
+    icon: SLIME_BALL
+    plugin: NexusOddities
+    summary: "Random harmless body quirks: shrinking, glowing, hiccups."
+    steps:
+      - "info :: Every so often your body does something odd: you briefly shrink or grow, glow, twitch, or hear a stomach growl, a hiccup, chills down your spine or ringing ears."
+      - "info :: It is all harmless. No damage, no lost items, and every oddity fades quickly by itself."
+      - "info :: A chat message tagged NexusOddities explains what just happened, so there is no need to worry. Just enjoy the weirdness."
+  pareidolia:
+    category: community
+    title: "Cave Whispers"
+    icon: SCULK_SENSOR
+    plugin: NexusPareidolia
+    summary: "Spooky cave sounds that only you hear. None of it is real."
+    steps:
+      - "info :: Deep underground and in the dark, you may hear footsteps, growls, whispers, scratching, a heartbeat or a broken music disc, with an occasional chat message."
+      - "info :: It is 100 percent illusion. Nothing real spawns, nothing can hurt you, and only you hear the sounds. Lighting the area with torches stops it."
+      - "info :: Sometimes you will hear your own footsteps played back 10 to 30 seconds later, right where you walked."
+      - "command nexuspareidolia info :: Run /nexuspareidolia info any time for a quick reminder that none of it is real."
+      - "info :: Tip: some of the sounds can startle you, so remember there is nothing there."
+  echoes:
+    category: community
+    title: "Echo Runes"
+    icon: ECHO_SHARD
+    plugin: NexusEchoes
+    summary: "Leave a spoken message at a spot for others to hear later."
+    steps:
+      - "info :: An Echo Rune lets you leave a message in the world, like a little audio log. Anyone who walks near it later hears it."
+      - "info :: Right-click a block while holding an Echo Rune to place it. Then type your message in chat. It is captured by the rune and not shown to everyone."
+      - "info :: Each player hears an echo with a cooldown, so it will not repeat constantly. Staff can swap an echo's sound for a recorded clip."
+      - "info :: Tip: leave a hint, a welcome or a joke at your base or at a favorite view for the next visitor."
+  bathroom:
+    category: community
+    title: "Gotta Go (Comedy)"
+    icon: CAULDRON
+    plugin: NexusBathroom
+    summary: "A silly bathroom meter with no penalties, just jokes."
+    steps:
+      - "info :: NexusBathroom is a comedy feature. Two silly meters fill up slowly as you play, and you get a chat message when it is time to go. Ignoring it has no penalty."
+      - "info :: You can relieve yourself with the /relieve command, or by right-clicking a placed Outhouse (a craftable cauldron-style item). A harmless item pops out for a few seconds with a sound."
+      - "info :: If a meter fills completely, an accident can happen instead. Players close by may see a message about it, so it is best not to wait."
+      - "info :: It is just for laughs. Nothing here changes your health or your gear."
+  houses:
+    category: community
+    title: "Great Houses"
+    icon: WHITE_BANNER
+    plugin: NexusHouses
+    summary: "Found a noble House with a sigil, banner and motto, and form alliances."
+    steps:
+      - "info :: Found your own noble House with a name, a sigil beast, banner colors and a motto. A house has one head, an optional heir, and any number of sworn members."
+      - "command house list :: Type /house list to see every house that has been founded."
+      - "info :: Found one with /house create <name> <sigilBeast> <primaryColor> <secondaryColor> [motto]. Sigils include wolf, lion, stag, dragon, bear and falcon. Colors include RED, BLUE and BLACK."
+      - "info :: Invite friends with /house invite <player>; they accept with /house join <houseName>. If the head dies, the named heir (or the longest-serving member) takes over."
+      - "info :: Houses can swear fealty, ally, or declare rivals. /house banner gives you your banner, and /house donate <amount> adds money to your house treasury."
+      - "info :: Tip: sneak and right-click your own tamed horse while holding your house banner to swear it to your colors."
+  warfare:
+    category: community
+    title: "Keeps and Warfare"
+    icon: SHIELD
+    plugin: NexusWarfare
+    summary: "House alliances fight to hold keeps and crown an Emperor."
+    steps:
+      - "info :: Great House alliances compete for keeps, which are zones that staff set up around the map. You capture one simply by standing in it. This needs NexusHouses alliances to work."
+      - "command warfare status :: Type /warfare status to see every keep, who owns it, and how far along any capture is."
+      - "info :: One alliance holding a keep alone for 5 minutes flips it. If nobody is there, or two alliances are both inside, the capture progress slowly drains away."
+      - "command warfare emperor :: Type /warfare emperor to see who is Emperor right now, if anyone."
+      - "info :: Own every main keep and your alliance is crowned Emperor, with +10% max health and attack damage. /warfare scroll shows each House's Elder Scroll, and stealing one weakens its House."
+  morality:
+    category: community
+    title: "Kindness & Karma"
+    icon: GOLDEN_APPLE
+    plugin: NexusMorality
+    summary: "Injured survivors to help, plus helpful hints when you get hurt."
+    steps:
+      - "info :: Now and then you may come across an injured survivor. What you do is up to you, and the game quietly keeps a karma score."
+      - "info :: Right-click them with food or a water bottle and stay nearby to gain karma. Hit them to loot them and you lose more karma. Walking away changes nothing."
+      - "info :: When you take damage or lose karma, chat tells you the problem in red and the fix right after in green. Your karma is saved between sessions."
+  folklore:
+    category: community
+    title: "Living Legends"
+    icon: BOOK
+    plugin: NexusFolklore
+    summary: "Real deaths and explosions become legends that villagers retell."
+    steps:
+      - "info :: NexusFolklore turns real events, like a player death or a big explosion, into permanent legends. Not every event becomes one."
+      - "info :: Right-click a villager to hear it retell a nearby legend. It tells you roughly which direction and how far away it happened."
+      - "command nexusfolklore list :: Type /nexusfolklore list to see the legends as they are told right now."
+      - "info :: Like a game of telephone, each retelling can change one detail, such as who it happened to, what caused it, or how long ago it was."
+  ambience:
+    category: community
+    title: "Living Sounds"
+    icon: NOTE_BLOCK
+    plugin: NexusAmbience
+    summary: "Birds, crowds and distant rumbles that make the world feel alive."
+    steps:
+      - "info :: NexusAmbience adds a soft soundscape just for you. Nobody else hears your sounds, and they follow the real time of day and weather."
+      - "info :: By day you may hear bees and parrots, and at night cave and wolf sounds. Thunderstorms add their own sounds on top."
+      - "info :: Lots of creatures nearby sound like a bustling crowd, and a big crowd farther away becomes a faint distant rumble. It uses whatever is really around you."
+      - "info :: There is nothing to set up. If you hear something far off, it usually means a lot is going on out there."
+  citizens:
+    category: community
+    title: "Living Towns"
+    icon: VILLAGER_SPAWN_EGG
+    plugin: NexusCitizens
+    summary: "Villagers and animals fill built-up towns so they never feel empty."
+    steps:
+      - "info :: NexusCitizens fills towns and kingdoms with villagers and passive animals so built-up places feel lived in."
+      - "info :: The busier a team's land is with real homes and shops, the bigger its crowd. Land with little built on it gets only a few villagers."
+      - "info :: The crowd only appears when someone is nearby, and it is removed after a town has been empty for a while. Nothing is saved."
+      - "info :: The villagers use normal Minecraft behavior, so they really work, sleep and breed. Enjoy the busy streets."
+  family:
+    category: community
+    title: "Marriage and Kids"
+    icon: PINK_TULIP
+    plugin: NexusFamily
+    summary: "Marry another player and raise a baby villager together."
+    steps:
+      - "info :: NexusFamily lets two players marry. You can propose with a command or with a ring item. It is a friendly, family-style system with no animations."
+      - "command marry status :: Type /marry status to see your current marriage status. The other commands are propose, accept, deny, divorce and ring."
+      - "info :: While you are married and near each other, there is a random chance over time of a baby. It is a real baby villager that grows up on its own timer."
+      - "info :: Right-click your kid for a greeting. Shift-right-click as a parent to open its inventory. Use /family talk and a message to chat with it. It answers from simple scripted replies."
+  chaos:
+    category: community
+    title: "Random Pranks"
+    icon: FIREWORK_STAR
+    plugin: NexusChaos
+    summary: "Surprise pranks hit at random, and chat always explains them."
+    steps:
+      - "info :: NexusChaos throws random little pranks at players while they play. Nobody controls when they happen, so expect surprises."
+      - "info :: Pranks include brief potion effects like nausea or blindness, a shuffled inventory with nothing lost, a small nudge, a short hop teleport, a fake death message, and silly sounds."
+      - "info :: When one happens, you get a chat message saying it came from NexusChaos. So it is not a bug, and you do not need to ask staff."
+      - "info :: Tip: if you suddenly feel dizzy or find your hotbar rearranged, just laugh it off. It passes quickly."
+  decor:
+    category: community
+    title: "Rooms and Decor"
+    icon: FLOWER_POT
+    plugin: NexusDecor
+    summary: "Claim a room, decorate it, score it, and show it off in the gallery."
+    steps:
+      - "info :: Claim a room with a Room Wand, decorate it with plain blocks, and get a score for how cozy it is. Then show off your best room in the server gallery."
+      - "info :: Rename a Stick to Room Wand in an anvil. Left-click one corner, right-click the opposite corner, then type /decor claim <name>. Rooms can be up to 32 blocks per side."
+      - "info :: /decor score counts lanterns and candles, flower pots, red or white carpet, oak stairs, and glass panes, oak trapdoors or oak fences. Use all five groups for a bonus."
+      - "command decor list :: Type /decor list to see your claimed rooms with their size, last score, and whether they are showcased."
+      - "command decor gallery :: Type /decor gallery to browse showcased rooms, best score first. Visit one with /decor visit <name>."
+      - "info :: Tip: scores only update when you run /decor score. Use /decor showcase <name> to add a room to the gallery. Claiming a room does not protect it from other builders."
+  shackles:
+    category: community
+    title: "Shackles (Roleplay)"
+    icon: LEAD
+    plugin: NexusShackles
+    summary: "A roleplay tool for jail and prison scenes."
+    steps:
+      - "info :: Shackles are for jail and prison roleplay. The Shackle is a specially named lead. Right-clicking a player with it, or using /shackle player <name>, anchors them to the spot."
+      - "info :: A shackled player can move within a small radius (3 blocks by default) and is pulled back at the edge. Teleporting out is blocked. They can still fight, use items and build."
+      - "command shackle status :: Run /shackle status to check your own shackle status."
+      - "info :: The shackler or an admin releases someone with /shackle release or by right-clicking them. Please use shackles only for roleplay that everyone is enjoying."
+  wildcard:
+    category: community
+    title: "Strange Mob Happenings"
+    icon: LEAD
+    plugin: NexusWildcard
+    summary: "Rare, harmless mob spectacles you might stumble across."
+    steps:
+      - "info :: Every 15 to 45 minutes or so, something odd can happen near a player: a wolf pack chasing a skeleton, a leashed conga line of mobs, a circling swarm, or a group that all freeze at once."
+      - "info :: It is all for show. The mobs involved are immune to damage, can't target players, and disappear on their own after about a minute at most. You can't hurt them, and they can't hurt you."
+      - "info :: Tip: if you see a pack of wolves chasing a skeleton, enjoy the show and take a screenshot. A chat message tells nearby players what is happening."
+  arrival:
+    category: community
+    title: "Strange Visions"
+    icon: ENDER_EYE
+    plugin: NexusArrival
+    summary: "Spooky sights and sounds that only you can see. Totally harmless."
+    steps:
+      - "info :: Now and then you may see odd particles, hear eerie sounds, or catch a flash of fake lightning. These visions are only seen and heard by you. Nobody else around notices them."
+      - "info :: They are never dangerous. No real mobs appear and nothing can hurt you. It is just atmosphere, and brand-new players get a big welcome vision on their very first arrival."
+      - "info :: The longer you stay logged in, the more often and the wilder the visions get. Log out and back in, and they start out subtle again. Just enjoy the show!"
+  chronicle:
+    category: community
+    title: "The Chronicle"
+    icon: WRITTEN_BOOK
+    plugin: NexusChronicle
+    summary: "A server-wide story told in chapters, with title cards and a boss bar."
+    steps:
+      - "info :: The Chronicle is a story the whole server shares, told one chapter (Age) at a time. When a staff member starts a chapter, everyone online sees it unfold together."
+      - "info :: A title card appears, a purple boss bar fills as the story goes, and the narration lands in chat a few seconds at a time. Keep an eye on chat so you don't miss it."
+      - "command nexuschronicle status :: Type /nexuschronicle status to see how many Ages have been told so far and what comes next."
+      - "info :: Between chapters, a short story line drops into chat every so often, taken from Ages that have already been told. Chapters only start when staff start them."
+  pulse:
+    category: community
+    title: "The Daily Pulse"
+    icon: WRITTEN_BOOK
+    plugin: NexusPulse
+    summary: "A newspaper that catches you up on what happened while you were away."
+    steps:
+      - "info :: NexusPulse gathers real events from around the server into one log: legends, herds, settlements, territory changes, oracle readings and more, plus who comes and goes."
+      - "info :: When you log in you get a quick while-you-were-away digest in chat, so you never have to catch up the hard way."
+      - "command nexuspulse read :: Run /nexuspulse read to open a freshly written newspaper as a book."
+      - "info :: There are also news boards in the world. Right-click one for a fresh paper."
+  threshold:
+    category: community
+    title: "The Land Remembers"
+    icon: DIRT_PATH
+    plugin: NexusThreshold
+    summary: "Where players walk, fight and gather, the land slowly changes."
+    steps:
+      - "info :: NexusThreshold never adds items or mobs. Instead the ground itself changes based on what players do together over time. Nobody places any blocks."
+      - "info :: Paths: walk the same route again and again and the ground wears from path, to gravel, to stone by default. Rivalry scars: lots of player-versus-player fighting in a chunk leaves it scarred."
+      - "info :: Shrines: when enough players gather in one place for a long time, a small stone cairn or mossy ring may appear there."
+      - "info :: Claimed land is never changed, so your base stays as you built it."
+  oracle:
+    category: community
+    title: "The Oracle"
+    icon: ENDER_EYE
+    plugin: NexusOracle
+    summary: "A prophecy built only from real, current server facts."
+    steps:
+      - "info :: The Oracle gives prophecies that are always true. Every line comes from something real: the moon phase, time until dawn, how many players are online, and other live signals."
+      - "command nexusoracle ask :: Run /nexusoracle ask to consult the Oracle. There is a short cooldown between consultations."
+      - "info :: If a source has nothing notable to say, it is simply skipped rather than made up. A growing team or a brewing rivalry can show up when those systems are in use."
+  logs:
+    category: staff
+    title: "Activity Logs & Rollback"
+    icon: WRITABLE_BOOK
+    plugin: NexusLogs
+    permission: nexustutorial.staff
+    summary: "Staff tool for login stats, activity lookups and block rollback."
+    steps:
+      - "info :: NexusLogs records sessions and activity server-wide: joins, block changes, containers, deaths, commands, chat and pickups. It is the staff tool for finding out who did what."
+      - "command nexuslogs logins :: Run /nexuslogs logins to see login counts for today, this week and all time. You can add a player name to check one person."
+      - "info :: /nexuslogs lookup is a read-only browse and takes filters such as player, time, radius, world and type. /nexuslogs inspect <player> gives a quick summary."
+      - "info :: /nexuslogs rollback restores block changes and needs a player or radius filter, so it can never wipe the whole server. Re-running it is safe. Old records are purged by retention settings."
+  cmdtracker:
+    category: staff
+    title: "Command Block Finder"
+    icon: REPEATING_COMMAND_BLOCK
+    plugin: NexusCmdTracker
+    permission: nexustutorial.staff
+    summary: "Find, filter and teleport to every command block in the world."
+    steps:
+      - "info :: NexusCmdTracker scans a world's saved region files to find every command block. It is for the day you can no longer remember where one is hiding."
+      - "info :: You can filter what it finds by what the blocks do, for example teleport commands or day and night cycle controls, so each kind is its own group."
+      - "info :: Browse the list in a menu or in chat, then click one to teleport right to it and inspect or change it. The scan needs no special server software."
+  gate:
+    category: staff
+    title: "Join Password Gate"
+    icon: IRON_DOOR
+    plugin: NexusGate
+    permission: nexustutorial.staff
+    summary: "A join password, separate for Java and Bedrock, with lockouts."
+    steps:
+      - "info :: NexusGate keeps unwanted visitors out. Players join frozen and must type /login and the password within a time limit. It does not use the whitelist."
+      - "info :: Java and Bedrock players have independent passwords. Three wrong tries, or running out of time, kicks the player, and repeat offenders get longer and longer IP lockouts."
+      - "command nexusgate status :: Type /nexusgate status to check how the gate is set up. Staff also use /nexusgate with setpassword to change a password, which locks out anyone who leaked the old one."
+      - "info :: Passwords are stored scrambled with a salt, never as plain text. Players can also get permanent personal codes."
+  mobshield:
+    category: staff
+    title: "Mob Shield"
+    icon: SHIELD
+    plugin: NexusMobShield
+    permission: nexustutorial.staff
+    summary: "Staff tool that blocks the vanilla kill command against mobs."
+    steps:
+      - "info :: NexusMobShield protects mobs and players from the vanilla /kill command, such as a rogue repeating command block. If something is killed that way, it is brought back."
+      - "command nexusmobshield status :: Run /nexusmobshield status to see how many kills were blocked and how many mobs had to be recovered."
+      - "info :: Creeper is exempt from protection by default. Use /nexusmobshield exempt add, remove or list to manage which mob types can still be killed."
+      - "info :: The plugin also turns off command block output so the console stays readable. /nexusmobshield quiet on or off toggles that."
+  npc:
+    category: staff
+    title: "NPC Framework"
+    icon: VILLAGER_SPAWN_EGG
+    plugin: NexusNPC
+    permission: nexustutorial.staff
+    summary: "Staff tool for creating villager, mob and skinned player NPCs."
+    steps:
+      - "info :: NexusNPC lets staff create NPCs. Mob NPCs are real entities (a villager by default) with normal AI turned off. Player-style NPCs are packet-based and need the PacketEvents plugin."
+      - "command npc list :: Run /npc list to see the NPCs that already exist on this server."
+      - "info :: /npc create, remove, tp, skin, equip, trait and waypoint manage them. skin takes a real player username and saves a permanent snapshot of that skin."
+      - "info :: Traits: LOOK_CLOSE faces nearby players, PATROL walks a waypoint loop, and GUARD fights nearby hostile mobs and returns to its post, respawning if it falls."
+  prison:
+    category: staff
+    title: "Prison and Release"
+    icon: IRON_BARS
+    plugin: NexusPrison
+    permission: nexustutorial.staff
+    summary: "Confine listed players to a zone, then free them on a real-world timer."
+    steps:
+      - "info :: NexusPrison confines only the players listed in its config (by Java name or Xbox gamertag). In Stage One they can move around inside a circular zone but can never cross its edge."
+      - "info :: Stage One players can't use commands (except their own status) and chat is muted by default. The timer is real-world time, 150 days by default, and keeps running while they are offline."
+      - "info :: When time is up, or you run /nexusprison pardon <player>, they move to Stage Two: free to move, in Adventure mode. /nexusprison extend <player> <days> only pushes the date later."
+      - "command nexusprison status :: Anyone can run /nexusprison status to see their own record. Staff can add a name for another player, or use /nexusprison list to see everyone registered."
+      - "info :: Gotcha: once someone is registered they are tracked by account, so deleting their config line does NOT free them. Only a pardon does. Players with nexusprison.exempt are never locked."
+  purgatory:
+    category: staff
+    title: "Purgatory Penalty"
+    icon: SOUL_SAND
+    plugin: NexusPurgatory
+    permission: nexustutorial.staff
+    summary: "A harsh, escalating penalty for specific listed players. Last-resort staff tool."
+    steps:
+      - "info :: NexusPurgatory is a severe penalty that applies ONLY to players named in the targets list in its config. Nobody else is ever touched. Keep it for serious, repeated problems."
+      - "info :: Targets get one heart of health, hunger held near empty, constant slowness, a shuffled inventory every 45 seconds, and their most valuable item deleted every 5 minutes."
+      - "info :: It escalates: short bursts of extra effects like blindness and nausea come more often the longer they stay online. They also see a boss bar timer. Escalation resets when they log out."
+      - "command nexuspurgatory status :: Run /nexuspurgatory status to check who is currently under the penalty."
+      - "info :: There is deliberately no in-game pardon. To release someone, delete their name from the targets list in config.yml and run /nexuspurgatory reload. Deleted items do not come back."
+  terra:
+    category: staff
+    title: "Real-World Terrain"
+    icon: GRASS_BLOCK
+    plugin: NexusTerra
+    permission: nexustutorial.staff
+    summary: "Staff tool that builds real places from map data."
+    steps:
+      - "info :: NexusTerra builds real-world places from OpenStreetMap and elevation data: terrain, roads, water, buildings, trees, bridges and more. The server needs internet access."
+      - "info :: /nexusterra generate <lat> <lon> [radius] builds one square tile. The radius is capped in config.yml, and progress messages go to all players."
+      - "info :: /nexusterra expand <lat> <lon> keeps adding tiles outward in a spiral, one finished tile at a time. It keeps running even if you disconnect, and /nexusterra stop ends it."
+      - "info :: A safety limit stops expansion at 10,000 meters from the start by default. Tip: your live config.yml is never overwritten by updates, so check it after a new version."
+  admin:
+    category: staff
+    title: "Staff Powers and the Admin Panel"
+    icon: COMMAND_BLOCK
+    plugin: NexusAdmin
+    permission: nexustutorial.staff
+    summary: "Vanish, god mode, fly, freeze, smite and more, all logged for oversight."
+    steps:
+      - "info :: NexusAdmin gives staff powers: vanish, god mode, fly, freeze, smite, teleport and kill. Each power has its own permission, so staff can be trusted a step at a time."
+      - "info :: Every use is written to an audit log file and shown live to staff holding the watch permission. Freeze, tphere and kill-on-player need a typed reason, and the reason is logged."
+      - "command admin :: Type /admin to open the admin panel. It has categories such as Staff Powers, Economy, Survival and Realms, shown only for plugins that are installed."
+      - "info :: Smite, kill and tphere have cooldowns to stop spam. Vanish and god mode clear when you reconnect, but a frozen player stays frozen until staff unfreeze them."
+  vault:
+    category: staff
+    title: "The Vault"
+    icon: BEDROCK
+    plugin: NexusVault
+    permission: nexustutorial.staff
+    summary: "A sealed region with clearance-only entry and unbreakable bedrock."
+    steps:
+      - "info :: NexusVault seals an underground region. Players without clearance are sent back to spawn whether they walk, teleport, use a portal, or log in already inside."
+      - "info :: Give clearance with /nexusvault grant <player> and remove it with /nexusvault revoke <player>. By default, ops can always walk in, even without clearance."
+      - "command nexusvault list :: Type /nexusvault list to see everyone who currently holds clearance."
+      - "info :: Only ops can break bedrock, in any game mode, and by default that rule covers the whole server. If a player says they can't mine bedrock, that is intended."
+  weatherreport:
+    category: staff
+    title: "Weather Report Panel"
+    icon: LIGHTNING_ROD
+    plugin: NexusWeatherReport
+    permission: nexustutorial.staff
+    summary: "A personal weather forecast menu built for one specific player."
+    steps:
+      - "info :: NexusWeatherReport is a personal weather service for ONE player, set by target-player in its config. Only that player and anyone in priority-players get the login button, menu and alerts."
+      - "info :: A new forecast rolls every 20 minutes. Most are routine and cosmetic, but 15% are severe: Thunderstorm, Tornado, Blizzard or Meteor Storm. Severe ones give a 10-minute emergency warning."
+      - "info :: The alert has a button that reveals where it will hit. Tornado and Meteor Storm are visual only. Thunderstorm and Blizzard use real weather, so everyone in that world sees the sky change."
+      - "info :: To test, an admin can run /nexusweather trigger <type> to start a severe system in about a minute. After changing target-player, run /nexusweather reload."
+  scan:
+    category: staff
+    title: "World Map Scanner"
+    icon: SPYGLASS
+    plugin: NexusScan
+    permission: nexustutorial.staff
+    summary: "Staff tool that scans explored chunks and sends map tiles to the website."
+    steps:
+      - "info :: NexusScan tracks every Overworld chunk ever visited (no player names or live positions) and renders isometric map tiles with real block textures for the website."
+      - "command nexusscan status :: Run /nexusscan status to check how the scan and the texture loading are doing."
+      - "info :: Scans start near the world spawn and expand outward, and run once a day by default. Tiles are pushed in batches, so the map fills in as the scan goes."
+      - "info :: /nexusscan backfill previews the chunk count first and only runs with confirm. /nexusscan resetvisited confirm clears the visited list. Both are big actions, so check the preview first."
+  heartbeat:
+    category: staff
+    title: "World Mood"
+    icon: HEART_OF_THE_SEA
+    plugin: NexusHeartbeat
+    permission: nexustutorial.staff
+    summary: "A shared server mood that other plugins feed into."
+    steps:
+      - "info :: NexusHeartbeat keeps one server-wide mood score from -100 to +100. The labels are Grim, Tense, Steady, Thriving and Radiant."
+      - "info :: Other Nexus plugins report moments to it, for example a legend being born, a market crash or a team forming. The mood drifts back toward neutral over time."
+      - "command heartbeat status :: Type /heartbeat status to see the current mood. Reporting moments and reloading are admin-only."
+      - "info :: It also reacts to deaths, first-time joins and returning players, and the login newspaper uses it for its opening line."

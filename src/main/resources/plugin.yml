@@ -1,0 +1,23 @@
+name: NexusTutorial
+version: ${project.version}
+main: com.nexuscraft.nexustutorial.NexusTutorialPlugin
+api-version: '1.21'
+author: Nexus Universe
+description: An interactive, hands-on tutorial that teaches new and returning players every Nexus plugin.
+
+commands:
+  tutorial:
+    description: Open the server tutorial -- short guided lessons on every plugin.
+    aliases: [tour, learn]
+    usage: /tutorial [start <lesson>|next|skip|stop|list|progress]
+
+permissions:
+  nexustutorial.use:
+    description: Take the tutorial.
+    default: true
+  nexustutorial.staff:
+    description: See the staff-tool lessons.
+    default: op
+  nexustutorial.admin:
+    description: Reload, check, reset and complete lessons for players.
+    default: op
